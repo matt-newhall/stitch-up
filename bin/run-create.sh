@@ -55,6 +55,9 @@ echo '{
 
 # End script if frontend-only - continue if making a monorepo
 if [ "$isFullstack" == "false" ]; then
+  cd 'apps/frontend'
+  pnpm add -D tailwindcss
+  pnpm exec tailwindcss init
   echo "Repository created - happy developing!"
   exit 0
 fi
