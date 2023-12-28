@@ -4,6 +4,7 @@
   "description": "Repository setup utility tool based on personal coding standards",
   "main": "bin/index.js",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
