@@ -4,6 +4,10 @@ import { exec } from 'child_process';
 import inquirer from 'inquirer';
 
 const repoName = process.argv[2]
+if (repoName === undefined) {
+  throw new Error("Unspecified repository name.")
+}
+
 inquirer
   .prompt([
     {
